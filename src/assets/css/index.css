@@ -1,0 +1,88 @@
+@tailwind base;
+
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/MerriweatherSans-VariableFont_wght.ttf);
+  font-weight: 300 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Work Sans;
+  src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+h1 {
+  @apply font-display text-4xl font-bold;
+}
+
+h2 {
+  @apply font-display text-3xl font-semibold;
+}
+
+h3 {
+  @apply font-display text-2xl font-semibold;
+}
+
+h4 {
+  @apply font-display text-xl font-semibold;
+}
+
+h5 {
+  @apply font-display text-lg font-semibold;
+}
+
+p {
+  @apply font-sans font-medium;
+}
+
+@tailwind components;
+
+.ease {
+  transition: all 0.1s ease-out;
+}
+
+.bg-image {
+  background-image: url(../img/bg-p.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.translate-up-100 {
+  transform: translateY(-90%);
+}
+
+.z-minus {
+  z-index: -1;
+}
+
+.btn {
+  @apply font-semibold text-sm py-2 px-4 rounded ease;
+}
+
+.btn-green {
+  @apply bg-green-700 text-gray-100;
+}
+
+.btn-green:hover {
+  @apply bg-green-900 ease;
+}
+
+.btn-info {
+  @apply bg-gray-700 text-gray-100;
+}
+
+.btn-info:hover {
+  @apply bg-gray-900 ease;
+}
+
+.btn-red {
+  @apply bg-red-700 text-gray-100;
+}
+
+.btn-red:hover {
+  @apply bg-red-900 ease;
+}
+
+@tailwind utilities;
