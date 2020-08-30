@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const getBusinesses = async (term, location) => {
-  const request = await axios.get(
+  const request = axios.get(
     `http://localhost:3001/api/businesses/${term}/${location}`
   );
-  return request;
+  return request.then((response) => response.data);
 };
 
 export { getBusinesses };

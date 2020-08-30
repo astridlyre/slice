@@ -56,11 +56,9 @@ function App({ siteInfo }) {
 
   const search = (event) => {
     event.preventDefault();
-    console.log(inputBusiness, inputWhere);
     getBusinesses(inputBusiness, inputWhere)
       .then((response) => {
         setSearchResults(response);
-        setCurrentBusiness(searchResults[0]);
         setInputBusiness("");
         setInputWhere("");
       })
