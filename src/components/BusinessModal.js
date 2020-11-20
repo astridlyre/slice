@@ -6,8 +6,10 @@ const BusinessModal = ({ business, setCurrentBusiness }) => {
     backgroundImage: `url(${business.image_url})`,
   };
   return (
-    <div className='fixed inset-0 w-screen min-h-screen flex flex-col sm:justify-center items-center bg-gray-900 bg-opacity-75 z-30'>
-      <div className='sm:mt-0 bg-gray-100 rounded w-full max-w-screen-sm overflow-y-scroll sm:overflow-y-auto'>
+    <div
+      className='fixed inset-0 w-screen min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-opacity-75 z-30'
+      onClick={() => setCurrentBusiness(null)}>
+      <div className=' bg-gray-100 rounded w-full max-w-screen-sm overflow-y-scroll sm:overflow-y-auto'>
         <div
           className='sm:pt-16 sm:pb-48 sm:px-8 p-4 bg-center bg-cover relative'
           style={bgImg}>

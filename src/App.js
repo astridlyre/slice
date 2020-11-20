@@ -58,7 +58,7 @@ function App({ siteInfo }) {
     event.preventDefault();
     getBusinesses(inputBusiness, inputWhere)
       .then((response) => {
-        setSearchResults(response);
+        setSearchResults(response.businesses);
         setInputBusiness("");
         setInputWhere("");
       })

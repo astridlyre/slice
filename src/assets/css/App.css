@@ -1216,6 +1216,10 @@ p {
   overflow-y: scroll;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1529,10 +1533,6 @@ p {
     display: grid;
   }
 
-  .sm\:justify-center {
-    justify-content: center;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
   }
@@ -1557,6 +1557,10 @@ p {
 
   .sm\:overflow-y-auto {
     overflow-y: auto;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
   }
 
   .sm\:p-8 {
